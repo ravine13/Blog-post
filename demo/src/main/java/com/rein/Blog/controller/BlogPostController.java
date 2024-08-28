@@ -16,7 +16,7 @@ import com.rein.Blog.Entities.BlogPost;
 import com.rein.Blog.service.BlogPostService;
 
 @RestController
-@RequestMapping("/blogposts") // Use lowercase to maintain consistency
+@RequestMapping("/blogposts") 
 public class BlogPostController {
 
     private final BlogPostService blogPostService;
