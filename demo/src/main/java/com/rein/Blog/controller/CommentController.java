@@ -1,5 +1,5 @@
 package com.rein.Blog.controller;
 
-public class CommentController. {
+public class CommentController{
     
 }
