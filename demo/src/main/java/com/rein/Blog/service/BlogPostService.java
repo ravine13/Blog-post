@@ -27,7 +27,7 @@ public class BlogPostService {
         return blogPostRepository.save(blogPost);
     }
     //delete
-    public void deleteBlogPost(Integer id){
+    public static void deleteBlogPost(Integer id){
         blogPostRepository.deleteById(id);
     }
 
