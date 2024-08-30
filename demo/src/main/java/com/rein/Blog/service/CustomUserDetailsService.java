@@ -28,7 +28,7 @@ public class CustomUserDetailsService implements UserDetailsService {
     @Transactional(readOnly = true)
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-        List<BigInteger> channelList = Arrays.asList(new BigInteger("1"), new BigInteger("4"), new BigInteger("8"));//USSD, APP, WHATSAPP
+        List<BigInteger> channelList = Arrays.asList(new BigInteger("1"), new BigInteger("4"), new BigInteger("8"));
         log.info("GETTING USER PASSED ########" + username);
         User user = userService.getUserByUserName(username);
         if (user == null) {
